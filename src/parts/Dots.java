@@ -88,6 +88,10 @@ public class Dots {
             draw();
         }
 
+        public int getPosition() {
+            return position;
+        }
+
         public void draw() {
             gc.setFill(color);
             gc.fillOval(getX() - radius, getY() - radius, diameter, diameter);
@@ -112,6 +116,27 @@ public class Dots {
 
         private int getY() {
             return getLocation(position / 8);
+        }
+
+        @Override
+        public String toString() {
+            return position + " " + getColorAsString();
+        }
+
+        public String getColorAsString() {
+            if (color == Dots.BLUE) {
+                return "blue";
+            } else if (color == Dots.GREEN) {
+                return "green";
+            } else if (color == Dots.ORANGE) {
+                return "orange";
+            } else if (color == Dots.RED) {
+                return "red";
+            } else if (color == Dots.GREY) {
+                return "grey";
+            } else {
+                return color.toString();
+            }
         }
     }
 

@@ -1,15 +1,45 @@
+## Outline
+- for loop
+  - parts
+    - start, end, increment
+    - (++ is the same as +1)
+    - in Java we almost always start at 0
+    - body
+  - circle
+- while loop
+  - parts
+    - condition
+    - body
+  - prime
+  - break
+- for each loop
+  - debug
+  - parts
+
+
+real break example
+
+## Examples
 #### Basic for loop
 * Draw 10 circles
-* Print the alphabet
 * What position is the letter "G" in the alphabet?
-* Draw a line
-* Draw a chess board
 * Print the first 10 names
 * Calculate interest compound annually
+* Print the alphabet (use counter variable)
+* Draw a clock (different range limits)
+* Draw a line (different range limits)
+* Print list with numbers (use counter + off by 1)
+* Countdown to liftoff (counting backwards)
+* Draw a chess board
+
+##### Mistakes
+* comma vs semicolon
+* wrong number of dots (<= vs <)
+* wrong number of dots (1 instead of 0)
 
 #### Basic while loop
 * How many licks?
-* Ask until valid number
+* Ask until valid number (prime)
 * read a file
 
 #### Basic for each loop
@@ -28,17 +58,9 @@
 
 
 ##### Different counter limits
-* Print list with numbers
-* Draw a clock
 
-##### Different counter step
 
-##### Counting backwards
-* Countdown to liftoff
 
-#### Mistakes
-- comma vs semicolon
-- <= vs <
 
 #### Advanced Scenarios
 * top 5 names starting with "J"

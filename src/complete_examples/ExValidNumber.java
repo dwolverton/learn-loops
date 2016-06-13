@@ -18,7 +18,7 @@ public class ExValidNumber extends ConsoleExample {
         String number = "";
         while (!isValid(number)) {
             System.out.println("Please enter a number between 1 and 20: ");
-            number = in.nextLine();
+            number = input.nextLine();
         }
         System.out.println("You entered " + number + ".");
     }

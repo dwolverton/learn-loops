@@ -59,5 +59,9 @@ public class TootsiePop {
         return radius <= 0;
     }
 
+    public boolean isPopRemaining() {
+        return !isArrivedAtCenter();
+    }
+
 
 }

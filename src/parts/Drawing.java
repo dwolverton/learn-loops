@@ -54,6 +54,11 @@ public class Drawing {
         drawText((int) Math.round(x), (int) Math.round(y), text);
     }
 
+    public void drawHour(int hour) {
+        int deg = getDegreesForHour(hour);
+        drawTextOnCircle(deg, Integer.toString(hour));
+    }
+
     public int getDegreesForHour(int hour) {
         if (hour == 12) {
             hour = 0;

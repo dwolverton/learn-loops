@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public abstract class ConsoleExample {
 
-    protected Scanner in = new Scanner(System.in);
+    protected Scanner input = new Scanner(System.in);
 
     protected abstract void run() throws Exception;
 

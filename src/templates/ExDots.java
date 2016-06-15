@@ -10,8 +10,8 @@
 package templates;
 
 import javafx.scene.Group;
-import parts.Dots;
-import parts.GuiExample;
+import support.Dots;
+import support.GuiExample;
 
 public class ExDots extends GuiExample {
 

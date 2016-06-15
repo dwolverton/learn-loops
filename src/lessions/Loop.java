@@ -9,7 +9,7 @@
  */
 package lessions;
 
-import parts.ConsoleExample;
+import support.ConsoleExample;
 
 public class Loop extends ConsoleExample {
 

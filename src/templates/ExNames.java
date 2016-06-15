@@ -9,8 +9,8 @@
  */
 package templates;
 
-import parts.ConsoleExample;
-import parts.Names;
+import support.ConsoleExample;
+import support.Names;
 
 public class ExNames extends ConsoleExample {
 

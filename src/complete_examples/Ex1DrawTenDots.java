@@ -9,15 +9,23 @@
  */
 package complete_examples;
 
-import parts.ConsoleExample;
-import parts.Names;
+import javafx.scene.Group;
+import support.Dots;
+import support.GuiExample;
 
-public class ExTopNames extends ConsoleExample {
+public class Ex1DrawTenDots extends GuiExample {
+
+    private Dots dots;
+
+    @Override
+    protected void setup(Group root) {
+        dots = new Dots(root);
+    }
 
     @Override
     protected void run() throws Exception {
         for (int i = 0; i < 10; i++) {
-            System.out.println(Names.getNames().get(i));
+            dots.addDot(Dots.RED);
         }
     }
 

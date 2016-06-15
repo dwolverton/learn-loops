@@ -10,8 +10,8 @@
 package templates;
 
 import javafx.scene.Group;
-import parts.Drawing;
-import parts.GuiExample;
+import support.Drawing;
+import support.GuiExample;
 
 public class ExDraw extends GuiExample {
 

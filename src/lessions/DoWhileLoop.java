@@ -10,8 +10,8 @@
 package lessions;
 
 import javafx.scene.Group;
-import parts.GuiExample;
-import parts.TootsiePop;
+import support.GuiExample;
+import support.TootsiePop;
 
 public class DoWhileLoop extends GuiExample {
 

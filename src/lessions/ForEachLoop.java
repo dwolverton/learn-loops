@@ -10,9 +10,9 @@
 package lessions;
 
 import javafx.scene.Group;
-import parts.Dots;
-import parts.Dots.Dot;
-import parts.GuiExample;
+import support.Dots;
+import support.Dots.Dot;
+import support.GuiExample;
 
 import java.util.List;
 

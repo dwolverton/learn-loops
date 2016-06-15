@@ -7,7 +7,7 @@
  *
  * http://www.vodori.com
  */
-package parts;
+package support;
 
 public abstract class ValidNumberExample extends ConsoleExample {
 

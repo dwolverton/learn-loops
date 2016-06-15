@@ -9,7 +9,7 @@
  */
 package lessions;
 
-import parts.ValidNumberExample;
+import support.ValidNumberExample;
 
 public class Prime extends ValidNumberExample {
 

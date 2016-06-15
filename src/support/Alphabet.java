@@ -7,7 +7,7 @@
  *
  * http://www.vodori.com
  */
-package parts;
+package support;
 
 import java.util.ArrayList;
 import java.util.List;

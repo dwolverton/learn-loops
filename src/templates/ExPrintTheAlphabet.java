@@ -9,8 +9,8 @@
  */
 package templates;
 
-import parts.Alphabet;
-import parts.ConsoleExample;
+import support.Alphabet;
+import support.ConsoleExample;
 
 public class ExPrintTheAlphabet extends ConsoleExample {
 

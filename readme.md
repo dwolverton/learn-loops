@@ -7,7 +7,8 @@
 - for loop (details)
   - use <, <=, >
   - i++
-
+- while loop prime
+- break
 
 
 - for loop

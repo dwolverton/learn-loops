@@ -7,7 +7,7 @@
  *
  * http://www.vodori.com
  */
-package parts;
+package support;
 
 import javafx.scene.Group;
 import javafx.scene.canvas.Canvas;

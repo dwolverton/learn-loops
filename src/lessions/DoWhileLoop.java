@@ -7,23 +7,33 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package lessions;
 
 import javafx.scene.Group;
-import parts.Dots;
 import parts.GuiExample;
+import parts.TootsiePop;
 
-public class ExDots extends GuiExample {
+public class DoWhileLoop extends GuiExample {
 
-    private Dots dots;
+    private TootsiePop tootsiePop;
 
     @Override
     protected void setup(Group root) {
-        dots = new Dots(root);
+        tootsiePop = new TootsiePop(root);
+        tootsiePop.setLickEfficacy(20);
     }
 
     @Override
     protected void run() throws Exception {
+
+        int numberOfLicks = 0;
+
+        do {
+            tootsiePop.lick();
+            numberOfLicks++;
+        } while (tootsiePop.isPopRemaining());
+
+        System.out.println("It takes " + numberOfLicks + " licks to get to the center of a Tootsie Pop!");
 
     }
 

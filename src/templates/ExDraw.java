@@ -7,40 +7,23 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package templates;
 
 import javafx.scene.Group;
-import javafx.scene.paint.Color;
-import parts.Dots;
-import parts.Dots.Dot;
+import parts.Drawing;
 import parts.GuiExample;
 
-import java.util.List;
+public class ExDraw extends GuiExample {
 
-public class ForEachLoop extends GuiExample {
-
-    private Dots dots;
+    private Drawing drawing;
 
     @Override
     protected void setup(Group root) {
-        dots = new Dots(root);
-        dots.addDots(12);
+        drawing = new Drawing(root);
     }
 
     @Override
     protected void run() throws Exception {
-
-
-        List<Dot> dotsList = dots.getDots();
-
-        for (Dot dot : dotsList) {
-            dot.mark();
-            if (dot.getColor() == Dots.BLUE) {
-                dot.erase();
-            }
-        }
-
-
     }
 
     public static void main(String[] args) {

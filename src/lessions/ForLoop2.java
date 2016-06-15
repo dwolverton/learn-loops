@@ -7,16 +7,31 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package lessions;
 
 import parts.ConsoleExample;
-import parts.Names;
 
-public class ExNames extends ConsoleExample {
+public class ForLoop2 extends ConsoleExample {
 
     @Override
     protected void run() throws Exception {
-        Names.getNames();
+
+
+        for (
+                int i = 0;
+                i < 4;
+                i++
+        ) {
+            System.out.println(i);
+        }
+
+        int i = 0;
+        while (i < 4) {
+            System.out.println(i);
+            i++;
+        }
+
+
     }
 
     public static void main(String[] args) {

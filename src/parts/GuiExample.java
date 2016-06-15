@@ -10,11 +10,13 @@
 package parts;
 
 import javafx.application.Application;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 public abstract class GuiExample extends Application {
@@ -38,5 +40,9 @@ public abstract class GuiExample extends Application {
                 throw new RuntimeException(ex);
             }
         }).start();
+
+        Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
+        primaryStage.setX((primScreenBounds.getWidth() - primaryStage.getWidth()));
+        primaryStage.setY(50);
     }
 }

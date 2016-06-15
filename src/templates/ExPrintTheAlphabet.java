@@ -7,22 +7,16 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package templates;
 
+import parts.Alphabet;
 import parts.ConsoleExample;
-import parts.Names;
 
-public class ForLoop extends ConsoleExample {
+public class ExPrintTheAlphabet extends ConsoleExample {
 
     @Override
     protected void run() throws Exception {
-
-
-        for (int i = 0 ; i < 3 ; i += 1) {
-            System.out.println(i);
-        }
-
-
+        Alphabet.getLetters();
     }
 
     public static void main(String[] args) {

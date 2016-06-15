@@ -1,4 +1,11 @@
 ## Outline
+- loop (repeats code)
+- 3 kinds
+- for loop (basic)
+- while loop
+
+
+
 - for loop
   - parts
     - start, end, increment
@@ -6,6 +13,7 @@
     - in Java we almost always start at 0
     - body
   - circle
+  - counting backwards
 - while loop
   - parts
     - condition
@@ -54,15 +62,5 @@ real break example
 * Find the largest number
 * Concatenate list of strings
 
-#### Using counter
-
-
-##### Different counter limits
-
-
-
-
 #### Advanced Scenarios
 * top 5 names starting with "J"
-
-#### Practice

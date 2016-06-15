@@ -7,16 +7,24 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package lessions;
 
-import parts.Alphabet;
 import parts.ConsoleExample;
 
-public class ExPrintTheAlphabet extends ConsoleExample {
+public class Loop extends ConsoleExample {
 
     @Override
     protected void run() throws Exception {
-        Alphabet.getLetters();
+
+        System.out.println("Three cheers...");
+
+        for (int i = 0 ; i < 3 ; i++) {
+            System.out.println("Hip-Hip Hurray!");
+        }
+
+        System.out.println("... That is all.");
+
+
     }
 
     public static void main(String[] args) {

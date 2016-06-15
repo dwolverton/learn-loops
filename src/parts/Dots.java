@@ -31,6 +31,7 @@ public class Dots {
     private static Random random = new Random();
 
     private GraphicsContext gc;
+    private GraphicsContext gcHighlight;
     private List<Dot> dots = new ArrayList<>();
     int radius = 20;
     int diameter = radius * 2;
@@ -41,6 +42,10 @@ public class Dots {
         Canvas canvas = new Canvas(space * 8, space * 8);
         root.getChildren().add(canvas);
         gc = canvas.getGraphicsContext2D();
+
+        Canvas highlightCanvas = new Canvas(space * 8, space * 8);
+        root.getChildren().add(highlightCanvas);
+        gcHighlight = highlightCanvas.getGraphicsContext2D();
     }
 
     public void addDot() {
@@ -67,6 +72,10 @@ public class Dots {
 
     public List<Dot> getDots() {
         return dots;
+    }
+
+    public void clearHighlight() {
+        gcHighlight.clearRect(0, 0, space * 8, space * 8);
     }
 
     public class Dot {
@@ -100,7 +109,7 @@ public class Dots {
         }
 
         public void erase() {
-            gc.clearRect(getX() - radius, getY() - radius, diameter, diameter);
+            gc.clearRect(getX() - radius - 1, getY() - radius - 1, diameter + 2, diameter + 2);
         }
 
         public void mark() {
@@ -108,6 +117,12 @@ public class Dots {
             gc.setLineWidth(2);
             gc.strokeLine(getX() - radius, getY() - radius, getX() + radius, getY() + radius);
             gc.strokeLine(getX() - radius, getY() + radius, getX() + radius, getY() - radius);
+        }
+
+        public void highlight() {
+            clearHighlight();
+            gcHighlight.setStroke(Color.BLACK);
+            gcHighlight.strokeOval(getX() - radius - 2, getY() - radius - 2, diameter + 4, diameter + 4);
         }
 
         private int getX() {

@@ -7,23 +7,22 @@
  *
  * http://www.vodori.com
  */
-package examples;
+package lessions;
 
-import javafx.scene.Group;
-import parts.Drawing;
-import parts.GuiExample;
+import parts.ConsoleExample;
 
-public class ExDraw extends GuiExample {
-
-    private Drawing drawing;
-
-    @Override
-    protected void setup(Group root) {
-        drawing = new Drawing(root);
-    }
+public class ForLoop extends ConsoleExample {
 
     @Override
     protected void run() throws Exception {
+
+
+
+        for (int i = 0 ; i < 3 ; i++) {
+            System.out.println(i);
+        }
+
+
     }
 
     public static void main(String[] args) {

@@ -33,9 +33,9 @@ public class ForEachLoop extends GuiExample {
         List<Dot> dotsList = dots.getDots();
 
         for (Dot dot : dotsList) {
-            dot.mark();
+            dot.highlight();
             if (dot.getColor() == Dots.BLUE) {
-                dot.erase();
+                dot.mark();
             }
         }
 

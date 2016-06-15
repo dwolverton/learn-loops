@@ -3,6 +3,10 @@
 - 3 kinds
 - for loop (basic)
 - while loop
+- for each
+- for loop (details)
+  - use <, <=, >
+  - i++
 
 
 

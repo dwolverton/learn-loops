@@ -32,6 +32,8 @@ public class Ex4CountOrangeDots extends GuiExample {
             if (dot.getColor() == Dots.ORANGE) {
                 numberOfOrangeDots++;
             }
+            dot.highlight();
+            Thread.sleep(100);
         }
 
         System.out.println("There are " + numberOfOrangeDots + " orange dots.");

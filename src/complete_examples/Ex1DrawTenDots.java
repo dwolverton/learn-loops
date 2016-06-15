@@ -26,6 +26,7 @@ public class Ex1DrawTenDots extends GuiExample {
     protected void run() throws Exception {
         for (int i = 0; i < 10; i++) {
             dots.addDot(Dots.RED);
+            Thread.sleep(150);
         }
     }
 

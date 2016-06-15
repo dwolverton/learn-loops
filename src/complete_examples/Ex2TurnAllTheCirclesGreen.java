@@ -29,6 +29,7 @@ public class Ex2TurnAllTheCirclesGreen extends GuiExample {
     protected void run() throws Exception {
         for (Dot dot : dots.getDots()) {
             dot.setColor(Color.GREEN);
+            Thread.sleep(150);
         }
     }
 

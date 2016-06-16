@@ -21,7 +21,7 @@ public class Ex5FindPositionOfE extends ConsoleExample {
         for (int i = 0; i < 26; i++) {
             String letter = Alphabet.getNthLetter(i);
             if (letter.equals("E")) {
-                System.out.println("The letter E is at postion " + (i + 1));
+                System.out.println("The letter E is at position " + (i + 1));
                 break;
             }
         }

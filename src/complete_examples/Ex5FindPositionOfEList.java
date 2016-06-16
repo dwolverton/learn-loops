@@ -22,7 +22,7 @@ public class Ex5FindPositionOfEList extends ConsoleExample {
         for (String letter : Alphabet.getLetters()) {
             position++;
             if (letter.equals("E")) {
-                System.out.println("The letter E is at postion " + position);
+                System.out.println("The letter E is at position " + position);
                 break;
             }
         }

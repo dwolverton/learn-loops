@@ -7,7 +7,7 @@
  *
  * http://www.vodori.com
  */
-package lessions;
+package lessons;
 
 import javafx.scene.Group;
 import support.GuiExample;

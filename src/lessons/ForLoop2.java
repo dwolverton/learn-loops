@@ -7,7 +7,7 @@
  *
  * http://www.vodori.com
  */
-package lessions;
+package lessons;
 
 import support.ConsoleExample;
 

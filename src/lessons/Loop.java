@@ -7,20 +7,22 @@
  *
  * http://www.vodori.com
  */
-package lessions;
+package lessons;
 
 import support.ConsoleExample;
 
-public class ForLoop extends ConsoleExample {
+public class Loop extends ConsoleExample {
 
     @Override
     protected void run() throws Exception {
 
-
+        System.out.println("Three cheers...");
 
         for (int i = 0 ; i < 3 ; i++) {
-            System.out.println(i);
+            System.out.println("Hip-Hip Hurray!");
         }
+
+        System.out.println("... That is all.");
 
 
     }
